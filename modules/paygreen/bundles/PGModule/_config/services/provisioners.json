@@ -1,0 +1,6 @@
+{
+  "provisioner.pre_payment": {
+    "class": "PGModuleProvisionersPrePaymentProvisioner",
+    "arguments": ["@bridge.prestashop"]
+  }
+}

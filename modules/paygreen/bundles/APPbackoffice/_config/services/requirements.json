@@ -1,0 +1,16 @@
+{
+  "requirement.shop_context": {
+    "class": "APPbackofficeServicesRequirementsShopContextRequirement",
+    "arguments": ["@handler.shop"],
+    "tags": [
+      { "name": "requirement" }
+    ]
+  },
+  "requirement.paygreen_connexion": {
+    "class": "APPbackofficeServicesRequirementsPaygreenConnexionRequirement",
+    "arguments": ["@paygreen.facade"],
+    "tags": [
+      { "name": "requirement" }
+    ]
+  }
+}

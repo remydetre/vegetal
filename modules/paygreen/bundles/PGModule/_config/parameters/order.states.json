@@ -1,0 +1,79 @@
+{
+  "order": {
+    "states": {
+      "VALIDATE": {
+        "name": "Paiement confirmé",
+        "source": {
+          "type": "configuration",
+          "name": "PS_OS_PAYMENT"
+        }
+      },
+      "ERROR": {
+        "name": "Paiement en erreur",
+        "source": {
+          "type": "configuration",
+          "name": "PS_OS_ERROR"
+        }
+      },
+      "CANCEL": {
+        "name": "Paiement annulé",
+        "source": {
+          "type": "configuration",
+          "name": "PS_OS_CANCELED"
+        }
+      },
+      "TEST": {
+        "name": "Test validé",
+        "create": true,
+        "source": {
+          "type": "settings",
+          "name": "_PG_ORDER_AUTH_TEST"
+        },
+        "metadata": {
+          "en": "Validated test",
+          "color": "#D4EA62",
+          "filename": "order_test.gif",
+          "paid": false,
+          "invoice" : false
+        }
+      },
+      "VERIFY": {
+        "name": "Paiement suspect",
+        "create": true,
+        "source": {
+          "type": "settings",
+          "name": "_PG_ORDER_VERIFY"
+        },
+        "metadata": {
+          "en": "Suspiscious payment",
+          "color": "#FF3300",
+          "filename": "order_verify.gif",
+          "paid": false,
+          "invoice" : false
+        }
+      },
+      "AUTH": {
+        "name": "Prélèvement en attente",
+        "source": {
+          "type": "configuration",
+          "name": "PS_OS_COD_VALIDATION"
+        }
+      },
+      "WAIT": {
+        "name": "Dossier de paiement validé",
+        "create": true,
+        "source": {
+          "type": "settings",
+          "name": "_PG_ORDER_WAIT"
+        },
+        "metadata": {
+          "en": "Validated payment record",
+          "color": "#337ab7",
+          "filename": "order_wait.gif",
+          "paid": false,
+          "invoice" : false
+        }
+      }
+    }
+  }
+}

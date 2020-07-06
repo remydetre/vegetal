@@ -1,0 +1,48 @@
+{
+  "facade.module": {
+    "class": "PGModuleServicesModuleFacade"
+  },
+
+  "bridge.prestashop": {},
+
+  "!selector.display_type": {
+    "extends": "selector.abstract",
+    "class": "PGModuleServicesSelectorsDisplayTypeSelector",
+    "arguments": ["@handler.prestashop"],
+    "tags": [
+      { "name": "selector" }
+    ]
+  },
+
+  "diagnostic.admin_page": {
+    "class": "PGModuleServicesDiagnosticsAdminPageDiagnostic",
+    "arguments": [
+      "@handler.admin_menu",
+      "@logger"
+    ],
+    "tags": [
+      { "name": "diagnostic" }
+    ]
+  },
+
+  "diagnostic.primary_shop": {
+    "class": "PGModuleServicesDiagnosticsPrimaryShopDiagnostic",
+    "arguments": [
+      "@settings",
+      "@logger"
+    ],
+    "tags": [
+      { "name": "diagnostic" }
+    ]
+  },
+
+  "strategy.order_state_mapper.configuration": {
+    "class": "PGModuleServicesStrategiesOrderStateConfigurationStrategy",
+    "tags": [
+      {
+        "name": "mapper.strategy.order_state",
+        "options": ["configuration"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "view.form": {
+    "extends": "view.basic",
+    "class": "PGFormServicesViewsFormView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field": {
+    "extends": "view.basic",
+    "class": "PGFormServicesViewsFieldView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.bool.checkbox": {
+    "extends": "view.basic",
+    "class": "PGFormServicesViewsFieldBoolCheckboxView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.choice.abstract": {
+    "extends": "view.basic",
+    "abstract": true,
+    "arguments": ["@handler.select", "@handler.translator"]
+  },
+  "view.field.choice.expanded": {
+    "extends": "view.field.choice.abstract",
+    "class": "PGFormServicesViewsFieldChoiceExpandedView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.choice.contracted": {
+    "extends": "view.field.choice.abstract",
+    "class": "PGFormServicesViewsFieldChoiceContractedView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.picture": {
+    "extends": "view.basic",
+    "class": "PGFormServicesViewsFieldPictureView",
+    "arguments": ["@handler.picture"],
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.object": {
+    "extends": "view.basic",
+    "class": "PGFormServicesViewsFieldObjectView",
+    "tags": [
+      { "name": "view" }
+    ]
+  },
+  "view.field.choice.double.bool": {
+    "extends": "view.field.choice.abstract",
+    "class": "PGFormServicesViewsFieldDoubleChoiceBooleanView",
+    "tags": [
+      { "name": "view" }
+    ]
+  }
+}

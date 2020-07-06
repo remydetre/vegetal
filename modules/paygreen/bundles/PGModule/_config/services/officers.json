@@ -1,0 +1,15 @@
+{
+  "officer.database": {
+    "class": "PGModuleServicesOfficersDatabaseOfficer"
+  },
+  "officer.post_payment": {
+    "class": "PGModuleServicesOfficersPostPaymentOfficer"
+  },
+  "officer.settings.configuration.global": {
+    "class": "PGModuleServicesOfficersConfigurationGlobalSettingsOfficer"
+  },
+  "officer.setup": {
+    "class": "PGModuleServicesOfficersSetupOfficer",
+    "arguments": ["@handler.database"]
+  }
+}

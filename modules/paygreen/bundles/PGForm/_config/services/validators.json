@@ -1,0 +1,34 @@
+{
+  "validator.abstract": {
+    "shared": false
+  },
+  "validator.length.min": {
+    "extends": "validator.abstract",
+    "class": "PGFormServicesValidatorsLengthMinValidator",
+    "tags": [
+      { "name": "validator" }
+    ]
+  },
+  "validator.length.max": {
+    "extends": "validator.abstract",
+    "class": "PGFormServicesValidatorsLengthMaxValidator",
+    "tags": [
+      { "name": "validator" }
+    ]
+  },
+  "validator.regexp": {
+    "extends": "validator.abstract",
+    "class": "PGFormServicesValidatorsRegexpValidator",
+    "tags": [
+      { "name": "validator" }
+    ]
+  },
+  "validator.array.in": {
+    "extends": "validator.abstract",
+    "class": "PGFormServicesValidatorsArrayInValidator",
+    "arguments": ["@handler.select"],
+    "tags": [
+      { "name": "validator" }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+<p style="margin: 0px 0px 1em; padding: 0px; color: rgb(130, 103, 63); font-family: &quot;Source Sans Pro&quot;, georgia, serif; font-size: 18px; text-align: center;">Distributeur Vegan N°1 dédié aux Professionnels<br />ACHETEZ EN LIGNE<br />Franco de <strong>port</strong> à partir de 199€</p>

@@ -1,0 +1,13 @@
+{
+  "diagnostic.default_button_picture": {
+    "class": "PGDomainServicesDiagnosticsDefaultButtonPictureDiagnostic",
+    "arguments": [
+      "@pathfinder",
+      "@handler.picture",
+      "@logger"
+    ],
+    "tags": [
+      { "name": "diagnostic" }
+    ]
+  }
+}

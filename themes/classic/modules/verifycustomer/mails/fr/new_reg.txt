@@ -1,0 +1,10 @@
+[{shop_url}] 
+
+Bonjour {employee_name}
+
+Le client {customer_name} est enregistré dans votre magasin {shop_name}
+Le nouveau client avec l´adresse d´email {customer_email} est enregistré dans votre magasin.
+{approve_text}
+{selected_groups}
+
+[{shop_url}] 

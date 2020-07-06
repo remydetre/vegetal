@@ -1,0 +1,5 @@
+{
+  "static": {
+    "public": "/modules/paygreen/views/static"
+  }
+}

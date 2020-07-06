@@ -1,0 +1,39 @@
+{
+  "listener.setup.hooks": {
+    "class": "PGModuleServicesListenersInstallHooksListener",
+    "arguments": [
+      "@bridge.prestashop",
+      "@logger"
+    ]
+  },
+  "listener.setup.admin_page": {
+    "class": "PGModuleServicesListenersInstallAdminPageListener",
+    "arguments": ["@handler.admin_menu", "@logger"]
+  },
+  "listener.setup.primary_shop": {
+    "class": "PGModuleServicesListenersInstallPrimaryShopListener",
+    "arguments": [
+      "@settings",
+      "@logger"
+    ]
+  },
+  "listener.setup.check_compatibility": {
+    "class": "PGModuleServicesListenersInstallCompatibilityCheckListener"
+  },
+  "listener.setup.uninstall_translations": {
+    "class": "PGModuleServicesListenersUninstallTranslationsListener"
+  },
+  "listener.setup.database": {
+    "class": "PGModuleServicesListenersSetupDatabaseListener",
+    "arguments": [
+      "@handler.database",
+      "@logger"
+    ]
+  },
+  "listener.order.delivery_confirmation": {
+    "class": "PGModuleServicesListenersDeliveryConfirmationListener",
+    "arguments": [
+      "@mapper.order_state"
+    ]
+  }
+}

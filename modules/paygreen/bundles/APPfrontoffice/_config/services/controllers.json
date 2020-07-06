@@ -1,0 +1,31 @@
+{
+  "controller.front.payment": {
+    "extends": "controller.abstract",
+    "class": "APPfrontofficeControllersPaymentController",
+    "tags": [
+      { "name": "controller" }
+    ]
+  },
+  "controller.front.customer_return": {
+    "extends": "controller.abstract",
+    "class": "APPfrontofficeControllersCustomerReturnController",
+    "arguments": ["%payment"],
+    "tags": [
+      { "name": "controller" }
+    ]
+  },
+  "controller.front.notification": {
+    "extends": "controller.abstract",
+    "class": "APPfrontofficeControllersNotificationController",
+    "tags": [
+      { "name": "controller" }
+    ]
+  },
+  "controller.front.tree": {
+    "extends": "controller.abstract",
+    "class": "APPfrontofficeControllersTreeController",
+    "tags": [
+      { "name": "controller" }
+    ]
+  }
+}

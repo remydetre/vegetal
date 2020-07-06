@@ -1,0 +1,13 @@
+{
+  "behaviors": {
+    "transmission_on_refund": {
+      "type": "user",
+      "key": "behavior_payment_refund"
+    },
+    "button_picture_height_usage": {
+      "type": "service",
+      "service": "handler.prestashop",
+      "method": "isPictureHeightUsage"
+    }
+  }
+}

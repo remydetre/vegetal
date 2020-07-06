@@ -1,0 +1,9 @@
+{
+  "blocks": [
+    {
+      "target": "button-list",
+      "template": "block-button-hooks",
+      "title": "prestashop.backoffice.blocks.hooks.title"
+    }
+  ]
+}

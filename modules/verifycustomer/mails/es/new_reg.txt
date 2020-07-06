@@ -1,0 +1,11 @@
+
+[{shop_url}] 
+
+Buenos días {employee_name}
+
+El cliente {customer_name} se ha registrado en su tienda {shop_name}
+Un nuevo cliente con el correo elecrónico {customer_email} se ha registrado en su tienda.
+{approve_text}
+{selected_groups}
+
+[{shop_url}] 

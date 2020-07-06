@@ -1,0 +1,58 @@
+{
+  "hook.integration": {
+    "class": "PGModuleServicesHooksIntegrationHook",
+    "arguments": [
+      "@facade.module",
+      "@bridge.prestashop",
+      "@paygreen.facade",
+      "@settings",
+      "@linker",
+      "@handler.static_file",
+      "@handler.view",
+      "@logger",
+      "%paygreen.backlink"
+    ],
+    "tags": [
+      {"name": "hook"}
+    ]
+  },
+  "hook.order": {
+    "class": "PGModuleServicesHooksOrderHook",
+    "arguments": [
+      "@broadcaster",
+      "@manager.order",
+      "@handler.tokenize",
+      "@logger"
+    ],
+    "tags": [
+      {"name": "hook"}
+    ]
+  },
+  "hook.checkout": {
+    "class": "PGModuleServicesHooksCheckoutHook",
+    "arguments": [
+      "@bridge.prestashop",
+      "@handler.checkout",
+      "@handler.prestashop",
+      "@handler.view",
+      "@manager.button",
+      "@linker",
+      "@logger"
+    ],
+    "tags": [
+      {"name": "hook"}
+    ]
+  },
+  "hook.payment": {
+    "class": "PGModuleServicesHooksPaymentHook",
+    "arguments": [
+      "@handler.view",
+      "@linker",
+      "@settings",
+      "@logger"
+    ],
+    "tags": [
+      {"name": "hook"}
+    ]
+  }
+}

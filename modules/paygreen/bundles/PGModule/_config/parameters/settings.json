@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "officers": {
+      "system": "officer.settings.configuration.global"
+    },
+    "entries": {
+      "_PG_CONFIG_VERIF_ADULT": {
+        "type": "bool",
+        "default": false
+      },
+      "_PG_ORDER_AUTH_OK": {
+        "type": "int"
+      },
+      "_PG_ORDER_VERIFY": {
+        "type": "int"
+      },
+      "_PG_ORDER_AUTH_TEST": {
+        "type": "int"
+      },
+      "_PG_ORDER_WAIT": {
+        "type": "int"
+      }
+    }
+  }
+}

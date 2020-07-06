@@ -1,0 +1,13 @@
+{
+  "form": {
+    "definitions": {
+      "button": {
+        "fields": {
+          "height": {
+            "behavior": "button_picture_height_usage"
+          }
+        }
+      }
+    }
+  }
+}

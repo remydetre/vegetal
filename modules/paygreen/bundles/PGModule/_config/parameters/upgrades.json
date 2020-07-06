@@ -1,0 +1,121 @@
+{
+  "upgrades": {
+    "1_2_8_upgrade_button_table": {
+      "version": "1.2.8",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/1.2.8-upgrade-button-table.sql"
+      }
+    },
+    "1_3_0_add_transaction_table": {
+      "version": "1.3.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/1.3.0-add-transaction-table.sql"
+      }
+    },
+    "1_3_1_upgrade_button_table": {
+      "version": "1.3.1",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/1.3.1-upgrade-button-table.sql"
+      }
+    },
+    "2_0_0_add_recurring_transaction_table": {
+      "version": "2.0.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.0.0-add-recurring-transaction-table.sql"
+      }
+    },
+    "2_1_0_upgrade_button_table": {
+      "version": "2.1.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.1.0-upgrade-button-table.sql"
+      }
+    },
+    "2_2_6_add_lock_table": {
+      "version": "2.2.6",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.2.6-add-lock-table.sql"
+      }
+    },
+    "2_2_8_upgrade_button_table": {
+      "version": "2.2.8",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.2.8-upgrade-button-table.sql"
+      }
+    },
+    "2_3_0_add_category_has_payment_table": {
+      "version": "2.3.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.3.0-add-category-has-payment-table.sql"
+      }
+    },
+    "2_5_0_upgrade_tables": {
+      "version": "2.5.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.5.0-upgrade-tables.sql"
+      }
+    },
+    "2_5_0_rename_configuration": {
+      "version": "2.5.0",
+      "type": "rename.configuration",
+      "config": {
+        "keys": {
+          "_PG_CONFIG_SHIPPING_PAYMENTS": "shipping_deactivated_payment_modes"
+        }
+      }
+    },
+    "2_7_0_database_multishop": {
+      "version": "2.7.0",
+      "type": "database.multishop"
+    },
+    "2_7_1_fix_image_default_value": {
+      "version": "2.7.1",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/2.7.1-fix-image-default-value.sql"
+      }
+    },
+    "2_7_3_fix_order_state_translations": {
+      "version": "2.7.3",
+      "type": "translation.order_state"
+    },
+    "3_0_0_upgrade_tables": {
+      "version": "3.0.0",
+      "type": "database",
+      "config": {
+        "script": "PGModule:upgrades/3.0.0-upgrade-tables.sql"
+      }
+    },
+    "3_0_0_restore_settings": {
+      "version": "3.0.0",
+      "type": "restore.settings",
+      "priority": 750,
+      "config": {
+        "keys": {
+          "_ID_UNIQUE_SHOP": "shop_identifier",
+          "_PG_CONFIG_PAYMENT_REFUND": "behavior_payment_refund",
+          "_PG_CONFIG_DELIVERY_CONFIRMATION": "behavior_delivery_confirmation",
+          "_PG_ACTIVATE_DEBUG_LOGS": "behavior_detailed_logs",
+          "_PG_CONFIG_PRIVATE_KEY": "private_key",
+          "_PG_CONFIG_SHOP_TOKEN": "public_key",
+          "_PG_PAIEMENT_ACCEPTED": "notice_payment_accepted",
+          "_PG_PAIEMENT_REFUSED": "notice_payment_refused",
+          "_PG_REFUSE_ACTION": "cancel_order_on_refused_payment",
+          "_PG_VISIBLE": "admin_only_visibility",
+          "_PG_CONFIG_FOOTER_DISPLAY": "footer_display",
+          "_PG_CONFIG_FOOTER_LOGO_COLOR": "footer_color",
+          "shipping_deactivated_payment_modes": "shipping_deactivated_payment_modes",
+          "notice_payment_canceled": "notice_payment_canceled"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+/**
+ * 2014 - 2019 Watt Is It
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Creative Commons BY-ND 4.0
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://creativecommons.org/licenses/by-nd/4.0/fr/
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to contact@paygreen.fr so we can send you a copy immediately.
+ *
+ * @author    PayGreen <contact@paygreen.fr>
+ * @copyright 2014 - 2019 Watt Is It
+ * @license   https://creativecommons.org/licenses/by-nd/4.0/fr/ Creative Commons BY-ND 4.0
+ * @version   2.7.6
+ */
+
+/* Resets */
+
+#module_form .form-group input,
+#module_form .form-group select,
+#module_form .form-group .radio,
+.ps_paygreen_buttonssetting input,
+.ps_paygreen_buttonssetting select,
+.ps_paygreen_buttonssetting img {
+	max-width: 100%;
+}
+
+
+/* Flex */
+
+.ps_paygreen_stepsbox,
+#ps_paygreen_step0,
+#module_form .form-wrapper,
+#module_form .form-group,
+.ps_paygreen_fields,
+.ps_paygreen_fields .form-group,
+.ps_paygreen_checkbox,
+.ps_paygreen_amount {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+#module_form .form-group {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#ps_paygreen_step0 {
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#module_form .form-wrapper,
+.ps_paygreen_fields {
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Configuration du compte */
+
+#ps_paygreen_step0 a,
+#ps_paygreen_step0 p {
+    margin: 0 20px;
+}
+
+#ps_paygreen_step0 .text-danger {
+	margin: 0;
+}
+
+.ps_paygreen_logoadmin {
+    margin-left: 0 !important;
+}
+
+.ps_paygreen_logoadmin img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.ps_paygreen_step {
+    max-width: 600px;
+    margin: 25px 3% 0 0 !important;
+}
+
+
+/* Configuration du système de paiement */
+
+#module_form .radio {
+	padding-top: 0;
+	min-height: inherit;
+}
+
+#module_form .form-group {
+	width: 48%;
+	margin: 15px 2% 15px 0;
+}
+
+#module_form .form-group:nth-child(odd) {
+	margin-right: 4%;
+}
+
+#module_form .form-group:nth-child(even) {
+	margin-right: 0;
+}
+
+#module_form .control-label {
+	font-weight: bold;
+	text-align: right;
+	padding-top: 0;
+	padding-right: 15px;
+	width: 40%;
+}
+
+#module_form .form-group>div {
+	width: 60%;
+}
+
+
+/* Configuration des boutons */
+
+.ps_paygreen_buttonssetting h2 {
+	margin: 0 0 30px 0;
+}
+
+.ps_paygreen_fields {
+	margin-top: 30px;
+}
+
+.ps_paygreen_fields .form-group {
+	width: 30%;
+	margin-right: 3.3%;
+}
+
+.ps_paygreen_label {
+	font-weight: bold !important;
+	width: 30%;
+	text-align: right;
+}
+
+.ps_paygreen_input {
+	width: 70%;
+	padding-left: 15px;
+}
+
+.ps_paygreen_to {
+	padding: 6px;
+}
+
+.ps_paygreen_fields .checkbox {
+	margin-top: 0 !important;
+}
+
+.ps_paygreen_inputimage img {
+	max-height: 40px;
+	margin-top: 5px;
+}
+
+
+/* Valider, Supprimer, Annuler */
+
+.ps_paygreen_submit {
+	width: 100%;
+}
+
+.ps_paygreen_submit button {
+	margin-left: 10px;
+}
+
+/* Petits écrans */
+
+@media screen and (max-width: 1270px) {
+	.ps_paygreen_fields {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	.ps_paygreen_fields .form-group {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #module_form .form-wrapper {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+    }
+
+	#module_form .form-group,
+	#module_form .form-group:nth-child(odd),
+	#module_form .form-group:nth-child(even) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+    #ps_paygreen_step0 {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .ps_paygreen_logoadmin,
+    #ps_paygreen_step0 a,
+    #ps_paygreen_step0 p {
+        margin: 10px 0;
+    }
+
+    #ps_paygreen_step0 p {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .ps_paygreen_stepsbox {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	#module_form .form-group,
+	.ps_paygreen_fields .form-group {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	#module_form .control-label,
+	#module_form .form-group>div,
+	.control-label,
+	.ps_paygreen_input {
+		width: 100%;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.ps_paygreen_hook .form-group {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+
+	.ps_paygreen_hook .ps_paygreen_label {
+		padding-left: inherit;
+	}
+}
+
+
+/* Ajustements localisés */
+
+.ps_paygreen_margin10 {
+	margin-bottom: 10px !important;
+}
+
+.hidden-field {
+	display: none!important;
+}
+
+.warning {
+	color: #FF0000;
+	width: 280px;
+}
+
+.text-color-paygreen{
+	color:#33ad73 !important;
+}

@@ -1,0 +1,132 @@
+/**
+* 2014 - 2015 Watt Is It
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PayGreen <contact@paygreen.fr>
+*  @copyright 2014-2014 Watt It Is
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+*/
+
+.margin-top-10{
+    margin-top:60px;
+}
+
+.margin-top-5{
+    margin-top:10px;
+}
+
+.text-color-paygreen{
+    color:#33ad73 !important;
+}
+
+/* Style tableau moyens de paiement */
+
+.wc_paygreen_categories table {
+	margin-top: 25px;
+    font-size: 1.1em;
+}
+
+.wc_paygreen_categories td {
+    height: 27px;
+    padding: 2px 25px;
+}
+
+.wc_paygreen_categories td {
+    text-align: center;
+}
+
+.wc_paygreen_categories thead {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories thead tr {
+	border-bottom: 1px solid #a0d0eb;
+}
+
+.wc_paygreen_categories thead input {
+    font-weight: normal;
+}
+
+.wc_paygreen_categories thead td input {
+    margin: 0;
+    width: 100%;
+}
+
+.wc_paygreen_categories tbody tr {
+	border-bottom: 1px solid #eaedef;
+}
+
+.wc_paygreen_categories tbody tr:hover {
+	background-color: #f4f8fb;
+}
+
+.wc_paygreen_categories tbody td input {
+    margin: 0 10px;
+}
+
+.wc_paygreen_categories td:first-child {
+    text-align: left;
+}
+
+/* Hiérarchie */
+
+.wc_paygreen_categories .dec_0 {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories .dec_1 {
+    padding-left: 40px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_2 {
+    padding-left: 60px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_3 {
+    padding-left: 80px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_4 {
+    padding-left: 100px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_5 {
+    padding-left: 110px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_6 {
+    padding-left: 120px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_7 {
+    padding-left: 130px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_8 {
+    padding-left: 140px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_9 {
+    padding-left: 150px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_10 {
+    padding-left: 160px; /* base + 20px */
+}

@@ -1,0 +1,9 @@
+{
+  "handler.session": {
+    "class": "PGUnaSeptimusServicesHandlersSessionHandler"
+  },
+  "handler.prestashop": {
+    "class": "PGUnaSeptimusServicesHandlersPrestashopHandler",
+    "arguments": ["@bridge.prestashop"]
+  }
+}

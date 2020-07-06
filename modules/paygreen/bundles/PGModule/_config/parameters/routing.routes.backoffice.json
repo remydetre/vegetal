@@ -1,0 +1,9 @@
+{
+  "routing": {
+    "routes": {
+      "backoffice.hook.refresh_position": {
+        "target": "refreshTopPosition@backoffice.hook"
+      }
+    }
+  }
+}

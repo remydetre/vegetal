@@ -1,0 +1,18 @@
+{
+  "db": {
+    "var": {
+      "prefix": "${_DB_PREFIX_}",
+      "engine": "${_MYSQL_ENGINE_}"
+    }
+  },
+  "media": {
+    "baseurl": "/img/paygreen"
+  },
+  "pages": {
+    "AdminPaygreen": {
+      "parent": "root",
+      "name": "PayGreen",
+      "icon": "euro_symbol"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+/**
+ * 2014 - 2019 Watt Is It
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Creative Commons BY-ND 4.0
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://creativecommons.org/licenses/by-nd/4.0/fr/
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to contact@paygreen.fr so we can send you a copy immediately.
+ *
+ * @author    PayGreen <contact@paygreen.fr>
+ * @copyright 2014 - 2019 Watt Is It
+ * @license   https://creativecommons.org/licenses/by-nd/4.0/fr/ Creative Commons BY-ND 4.0
+ * @version   2.7.6
+ */
+
+/* Style tableau moyens de paiement */
+
+.wc_paygreen_categories table {
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+
+.wc_paygreen_categories td {
+    height: 27px;
+    padding: 2px 25px;
+}
+
+.wc_paygreen_categories td {
+    text-align: center;
+}
+
+.wc_paygreen_categories thead {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories thead tr {
+    border-bottom: 1px solid #a0d0eb;
+}
+
+.wc_paygreen_categories thead input {
+    font-weight: normal;
+}
+
+.wc_paygreen_categories thead td input {
+    margin: 0;
+    width: 100%;
+}
+
+.wc_paygreen_categories tbody tr {
+    border-bottom: 1px solid #eaedef;
+}
+
+.wc_paygreen_categories tbody tr:hover {
+    background-color: #f4f8fb;
+}
+
+.wc_paygreen_categories tbody td input {
+    margin: 0 10px;
+}
+
+.wc_paygreen_categories td:first-child {
+    text-align: left;
+}
+
+/* Hiérarchie */
+
+.wc_paygreen_categories .dec_0 {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories .dec_1 {
+    padding-left: 40px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_2 {
+    padding-left: 60px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_3 {
+    padding-left: 80px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_4 {
+    padding-left: 100px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_5 {
+    padding-left: 110px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_6 {
+    padding-left: 120px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_7 {
+    padding-left: 130px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_8 {
+    padding-left: 140px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_9 {
+    padding-left: 150px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_10 {
+    padding-left: 160px; /* base + 20px */
+}

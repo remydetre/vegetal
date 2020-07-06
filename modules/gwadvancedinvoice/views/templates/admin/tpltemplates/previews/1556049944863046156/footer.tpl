@@ -1,0 +1,1 @@
+<h6 style="text-align: center;">SASU VEGETAL FOOD au Capital social de 2000€ immatriculé au RCS de Créteil<br />SIREN: 849 548 052 - SIRET: 84954805200018 - TVA FR14849548052 - Code NAF 4690Z</h6>

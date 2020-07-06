@@ -1,0 +1,11 @@
+
+[{shop_url}] 
+
+Guten Tag {employee_name}
+
+Der Kunde {customer_name} hat sich in Ihrem Shop {shop_name} registriert
+Ein neuer Kunde mit der E-Mail {customer_email} hat sich in Ihrem Shop registriert.
+{approve_text}
+{selected_groups}
+
+[{shop_url}] 

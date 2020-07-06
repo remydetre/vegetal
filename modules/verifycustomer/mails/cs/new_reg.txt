@@ -1,0 +1,11 @@
+
+[{shop_url}] 
+
+Dobrý den {employee_name}
+
+Zákazník {customer_name} se právě zaregistroval ve vašem obchodě {shop_name}
+Nový zákazník s e-mailem {customer_email} se zaregistroval do vašeho obchodu.
+{approve_text}
+{selected_groups}
+
+[{shop_url}] 

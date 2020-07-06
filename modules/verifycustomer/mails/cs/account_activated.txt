@@ -1,0 +1,10 @@
+
+[{shop_url}] 
+
+Dobrý den {firstname} {lastname}.
+
+Informace o vašem uživatelském účtu v obchodě {shop_name}.
+Děkujeme, že jste si vybrali náš obchod {shop_name}.
+Váš uživatelský účet byl schválen a je již aktivní. Od tohoto okamžiku můžete objednávat.
+
+[{shop_url}] 

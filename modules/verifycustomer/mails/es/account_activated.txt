@@ -1,0 +1,10 @@
+
+[{shop_url}] 
+
+Buenos días {firstname} {lastname}.
+
+Información sobre su cuenta creada en la tienda {shop_name}.
+Gracias por elegir la tienda {shop_name}.
+Su cuenta ha sido autorizada correctamente y está lista para el uso y la creación de pedidos.
+
+[{shop_url}] 

@@ -1,0 +1,20 @@
+.pureproductpictogram {
+	display: inline-block;
+	padding: 0 12px 12px 0;
+}
+
+.pureproductpictogram img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+@media (max-width: 991px) {
+	.pureproductpictogram {
+		padding: 0 10px 10px 0;
+	}
+
+	.pureproductpictogram img {
+		max-width: 50px;
+		max-height: 50px;
+	}
+}

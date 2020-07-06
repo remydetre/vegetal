@@ -1,0 +1,12 @@
+{
+  "payment": {
+    "forwarding": {
+      "order": {
+        "!validate": {
+          "type": "redirect",
+          "link": "order.confirmation"
+        }
+      }
+    }
+  }
+}

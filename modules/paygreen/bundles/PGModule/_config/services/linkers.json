@@ -1,0 +1,57 @@
+{
+  "linker.abstract.prestashop": {
+    "abstract": true,
+    "arguments": ["@bridge.prestashop"]
+  },
+  "linker.backoffice": {
+    "class": "PGModuleServicesLinkersBackofficeLinker",
+    "extends": "linker.abstract.prestashop",
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.frontoffice": {
+    "class": "PGModuleServicesLinkersFrontofficeLinker",
+    "extends": "linker.abstract.prestashop",
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.home": {
+    "class": "PGModuleServicesLinkersPageLinker",
+    "extends": "linker.abstract.prestashop",
+    "arguments": ["index"],
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.checkout": {
+    "class": "PGModuleServicesLinkersCheckoutLinker",
+    "extends": "linker.abstract.prestashop",
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.order": {
+    "class": "PGModuleServicesLinkersOrderLinker",
+    "extends": "linker.abstract.prestashop",
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.order.confirmation": {
+    "class": "PGModuleServicesLinkersOrderConfirmationLinker",
+    "extends": "linker.abstract.prestashop",
+    "tags": [
+      {"name": "linker"}
+    ]
+  },
+  "linker.order.history": {
+    "class": "PGModuleServicesLinkersPageLinker",
+    "extends": "linker.abstract.prestashop",
+    "arguments": ["history"],
+    "tags": [
+      {"name": "linker"}
+    ]
+  }
+}

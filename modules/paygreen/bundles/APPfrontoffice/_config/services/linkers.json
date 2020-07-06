@@ -1,0 +1,9 @@
+{
+  "linker.retry_payment_validation": {
+    "class": "APPfrontofficeServicesLinkersRetryPaymentValidationLinker",
+    "arguments": ["@handler.payment_creation"],
+    "tags": [
+      {"name": "linker"}
+    ]
+  }
+}

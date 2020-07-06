@@ -1,0 +1,10 @@
+
+[{shop_url}] 
+
+Guten Tag {firstname} {lastname}.
+
+Information über Ihren im {shop_name} erstellten Account.
+Vielen Dank, dass Sie den Shop {shop_name} gewählt haben.
+Ihr Account wurde erfolgreich bestätigt und ist für die Nutzung und Erstellung von Bestellungen bereit.
+
+[{shop_url}] 

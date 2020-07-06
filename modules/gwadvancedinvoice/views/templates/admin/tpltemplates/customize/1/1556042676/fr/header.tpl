@@ -1,0 +1,1 @@
+<p><img src="http://vegetalfood.fr/img/cms/logo.png" alt="Logo Grossiste Vegan" width="119" height="50" /></p>

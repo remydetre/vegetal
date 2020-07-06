@@ -1,0 +1,9 @@
+{
+  "controller.backoffice.hook": {
+    "extends": "controller.abstract",
+    "class": "PGModuleServicesControllersBackofficeHookController",
+    "tags": [
+      { "name": "controller" }
+    ]
+  }
+}

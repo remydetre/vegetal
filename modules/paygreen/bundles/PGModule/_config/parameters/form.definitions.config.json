@@ -1,0 +1,16 @@
+{
+  "form": {
+    "definitions": {
+      "config": {
+        "fields": {
+          "admin_only_visibility": {
+            "enabled": false
+          },
+          "notice_payment_canceled": {
+            "enabled": false
+          }
+        }
+      }
+    }
+  }
+}

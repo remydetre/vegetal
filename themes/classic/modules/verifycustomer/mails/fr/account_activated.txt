@@ -1,0 +1,9 @@
+[{shop_url}] 
+
+Bonjour .
+
+Les informations sur votre compte créé dans la boutique en ligne {shop_name}.
+Merci d'avoir choisi {shop_name}.
+Votre compte a été approuvé et il est prêt à l'emploi et à la création des commandes.
+
+[{shop_url}] 

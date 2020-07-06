@@ -1,0 +1,6 @@
+{
+  "handler.prestashop": {
+    "class": "PGUnaSextusServicesHandlersPrestashopHandler",
+    "arguments": ["@bridge.prestashop"]
+  }
+}

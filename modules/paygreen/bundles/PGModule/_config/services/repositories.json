@@ -1,0 +1,24 @@
+{
+  "repository.address": {
+    "class": "PGModuleServicesRepositoriesAddressRepository"
+  },
+  "repository.order": {
+    "class": "PGModuleServicesRepositoriesOrderRepository"
+  },
+  "repository.category": {
+    "class": "PGModuleServicesRepositoriesCategoryRepository"
+  },
+  "repository.product": {
+    "class": "PGModuleServicesRepositoriesProductRepository"
+  },
+  "repository.order_state": {
+    "class": "PGModuleServicesRepositoriesOrderStateRepository",
+    "arguments": ["%order.states"]
+  },
+  "repository.currency": {
+    "class": "PGModuleServicesRepositoriesCurrencyRepository"
+  },
+  "repository.shop": {
+    "class": "PGModuleServicesRepositoriesShopRepository"
+  }
+}

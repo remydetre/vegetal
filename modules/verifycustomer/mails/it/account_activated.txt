@@ -1,0 +1,10 @@
+
+[{shop_url}] 
+
+Buon giorno {firstname} {lastname}.
+
+Informazioni sul tuo account registrato nel negozio {shop_name}.
+Grazie per aver scelto il nostro negozio {shop_name}.
+Il tuo account è stato confermato e registrato con successo, ed adesso sei pronto per fare gli acquisti.
+
+[{shop_url}] 

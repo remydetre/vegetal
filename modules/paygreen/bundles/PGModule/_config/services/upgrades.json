@@ -1,0 +1,34 @@
+{
+  "upgrade.database.multishop": {
+    "class": "PGModuleServicesUpgradesDatabaseMultiShopUpgrade",
+    "extends": "upgrade.abstract",
+    "arguments": ["@handler.database", "@handler.shop"],
+    "tags": [
+      { "name": "upgrade" }
+    ]
+  },
+  "upgrade.translation.order_state": {
+    "class": "PGModuleServicesUpgradesOrderStateTranslationsUpgrade",
+    "extends": "upgrade.abstract",
+    "arguments": ["@manager.shop", "@parameters"],
+    "tags": [
+      { "name": "upgrade" }
+    ]
+  },
+  "upgrade.rename.configuration": {
+    "class": "PGModuleServicesUpgradesRenameConfigurationUpgrade",
+    "extends": "upgrade.abstract",
+    "arguments": ["@logger"],
+    "tags": [
+      { "name": "upgrade" }
+    ]
+  },
+  "upgrade.restore.settings": {
+    "class": "PGModuleServicesUpgradesRestoreSettingsUpgrade",
+    "extends": "upgrade.abstract",
+    "arguments": ["@settings", "@manager.setting", "@manager.shop", "@logger"],
+    "tags": [
+      { "name": "upgrade" }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+#selectedPictograms {
+	padding: 10px 0;
+	display: table;
+	min-height: 140px;
+}
+
+#selectedPictograms > div {
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+
+#selectedPictograms > div > img {
+	width: 96px;
+	height: 96px;
+}
+
+#selectedPictograms > div img:hover {
+	cursor: move;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+#selectedPictograms a.deletePictogram {
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	border: solid 1px #FFF;
+	background: #444;
+	z-index: 100;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#selectedPictograms a.deletePictogram:hover {
+	background: #000;
+}
+
+#selectedPictograms a.deletePictogram i {
+	font-size: 1rem;
+}
+
+#selectedPictograms div.ui-sortable-placeholder {
+	display: table-cell;
+}
+
+#pureproductpictograms .panel-footer {
+    clear: both;
+}
+
+.pictograms, .pictogram_container {
+	width: 100px;
+	display: inline-block;
+}
+
+.pictograms {
+	text-align: center;
+	background: #FFF;
+	border: solid 1px #EEE;
+}
+
+.pictogram_container {
+	float: left;
+	height: 100px;
+	margin: 10px;
+}
+	
+
+.pictograms, .pictograms * {
+	cursor: pointer;
+}
+
+.pictograms:hover {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+	border-color: #333;
+}
+
+.pictograms:hover label {
+	background: #333;
+	color: #FFF;
+}
+
+.pictograms img {
+	max-width: 64px;
+	max-height: 64px;
+	margin: 6px 0;
+}
+
+.pictograms input {
+	margin: 0;
+}
+
+.pictograms label {
+	display: block;
+	background: #F5F5F5;
+	margin: 0;
+	padding: 3px;
+	border-top: solid 1px #EEE;
+	font-size: 0.75em;
+	float: none;
+    width: auto;
+}

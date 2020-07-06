@@ -1,0 +1,18 @@
+{
+  "deflector.filter.shop_context":{
+    "extends": "deflector.abstract",
+    "class": "APPbackofficeServicesDeflectorsShopContextDeflector",
+    "arguments": ["@handler.route"],
+    "tags": [
+      { "name":  "deflector" }
+    ]
+  },
+  "deflector.filter.paygreen_connexion":{
+    "extends": "deflector.abstract",
+    "class": "APPbackofficeServicesDeflectorsPaygreenConnexionDeflector",
+    "arguments": ["@handler.route"],
+    "tags": [
+      { "name":  "deflector" }
+    ]
+  }
+}

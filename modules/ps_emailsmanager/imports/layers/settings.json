@@ -1,0 +1,389 @@
+{
+  "product_key": "4a45966ebed389743a67e34a342fa943",
+  "name": "layers",
+  "version": "1.8",
+  "author": "DVIT",
+  "inputs": [
+    {
+      "type": "color",
+      "name": "body_color",
+      "default": "#f5f5f5",
+      "required": true,
+      "label": {
+        "en": "Mail background color",
+        "fr": "Couleur de fond du mail"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "body_border_color",
+      "default": "#edeff2",
+      "required": true,
+      "label": {
+        "en": "Mail border color",
+        "fr": "Couleur de la bordure du mail"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "logo_back_color",
+      "default": "#044767",
+      "required": true,
+      "label": {
+        "en": "Header background color",
+        "fr": "Couleur de fond de l'entête"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "sub_logo_back_color",
+      "default": "#186083",
+      "required": true,
+      "label": {
+        "en": "Header border bottom color",
+        "fr": "Couleur de la bordure basse de l'entête"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "icon_size",
+      "default": "128",
+      "required": false,
+      "label": {
+        "en": "Icon size",
+        "fr": "Taille de l'image"
+      },
+      "desc": {
+        "en": "Write here the desired size for the icon (in pixels). <strong>Default is 128</strong>. Examples: 96, 64, 48... Write 0 to hide the icon.",
+        "fr": "Saisir la taille souhaitée pour l'icône (en pixels). <Strong>La valeur par défaut est 128</strong>. Exemples : 96, 64, 48... Ecrivez 0 pour masquer l'icône."
+      }
+    },
+    {
+      "type": "text",
+      "name": "icon_color",
+      "default": "dark",
+      "required": true,
+      "label": {
+        "en": "Icon main color",
+        "fr": "Couleur de l'image"
+      },
+      "desc": {
+        "en": "Change the icon color to fit a dark theme. Write one of these values : <strong>dark</strong> [by default], <strong>light</strong>",
+        "fr": "Changer la couleur de l'image pour l'adapter à un thème sombre. Ecrire l'une de ces valeurs : <strong>dark</strong> [gris, par défaut], <strong>light</strong> [blanc]"
+      }
+    },
+    {
+      "type": "color",
+      "name": "section_back_color",
+      "default": "#ffffff",
+      "required": true,
+      "label": {
+        "en": "Mail content background color",
+        "fr": "Couleur de fond pour le contenu du mail"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "font_color",
+      "default": "#828890",
+      "required": true,
+      "label": {
+        "en": "Font color",
+        "fr": "Couleur de la police"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "title_color",
+      "default": "#52565b",
+      "required": true,
+      "label": {
+        "en": "Title color",
+        "fr": "Couleur des titres"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "strong_color",
+      "default": "#2499c1",
+      "required": true,
+      "label": {
+        "en": "Strong font color",
+        "fr": "Couleur de la police en gras"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "link_color",
+      "default": "#13B8DC",
+      "required": true,
+      "label": {
+        "en": "Links color",
+        "fr": "Couleur des liens"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "divider_color",
+      "default": "#edeff2",
+      "required": true,
+      "label": {
+        "en": "Mail divider color",
+        "fr": "Couleur des lignes de séparation"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "sl_back_color",
+      "default": "#1B9BA3",
+      "required": true,
+      "label": {
+        "en": "Social networks background color",
+        "fr": "Couleur de fond du bloc contenant les réseaux sociaux"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "color",
+      "name": "sub_sl_back_color",
+      "default": "#48afb5",
+      "required": true,
+      "label": {
+        "en": "Social networks border bottom color",
+        "fr": "Couleur de la bordure basse du bloc contenant les réseaux sociaux"
+      },
+      "desc": {
+        "en": "",
+        "fr": ""
+      }
+    },
+    {
+      "type": "text",
+      "name": "facebook_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Facebook link",
+        "fr": "Lien Facebook"
+      },
+      "desc": {
+        "en": "Insert link to Facebook page",
+        "fr": "Insérer le lien vers votre page Facebook"
+      }
+    },
+    {
+      "type": "text",
+      "name": "twitter_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Twitter link",
+        "fr": "Lien Twitter"
+      },
+      "desc": {
+        "en": "Insert link to Twitter page",
+        "fr": "Insérer le lien vers votre page Twitter"
+      }
+    },
+    {
+      "type": "text",
+      "name": "google_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Google+ link",
+        "fr": "Lien Google+"
+      },
+      "desc": {
+        "en": "Insert link to Google+ page",
+        "fr": "Insérer le lien vers votre page Google+"
+      }
+    },
+    {
+      "type": "text",
+      "name": "youtube_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Youtube link",
+        "fr": "Lien Youtube"
+      },
+      "desc": {
+        "en": "Insert link to Youtube page",
+        "fr": "Insérer le lien vers votre page Youtube"
+      }
+    },
+    {
+      "type": "text",
+      "name": "vimeo_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Vimeo link",
+        "fr": "Lien Vimeo"
+      },
+      "desc": {
+        "en": "Insert link to Vimeo page",
+        "fr": "Insérer le lien vers votre page Vimeo"
+      }
+    },
+    {
+      "type": "text",
+      "name": "instagram_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Instagram link",
+        "fr": "Lien Instagram"
+      },
+      "desc": {
+        "en": "Insert link to Instagram page",
+        "fr": "Insérer le lien vers votre page Instagram"
+      }
+    },
+    {
+      "type": "text",
+      "name": "pinterest_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Pinterest link",
+        "fr": "Lien Pinterest"
+      },
+      "desc": {
+        "en": "Insert link to Pinterest page",
+        "fr": "Insérer le lien vers votre page Pinterest"
+      }
+    },
+    {
+      "type": "text",
+      "name": "linkedin_url",
+      "default": "",
+      "required": false,
+      "label": {
+        "en": "Linkedin link",
+        "fr": "Lien Linkedin"
+      },
+      "desc": {
+        "en": "Insert link to Linkedin page",
+        "fr": "Insérer le lien vers votre page Linkedin"
+      }
+    },
+    {
+      "type": "textarea",
+      "name": "custom_text",
+      "default": {
+        "en" : "My custom text ",
+        "fr" : "Mon texte personnalisé"
+      },
+      "required": false,
+      "lang": true,
+      "label": {
+        "en": "Custom text",
+        "fr": "Texte personnalisé"
+      },
+      "desc": {
+        "en": "Write here a custom text which will be displayed at the bottom of each email. Leave empty if you don't want to display a custom text.",
+        "fr": "Ecrivez un message personnalisé qui sera affiché en bas de chaque email. Laisser le champ vide si vous ne voulez pas afficher de texte."
+      }
+    },
+    {
+      "type": "text",
+      "name": "display_shop_details",
+      "default": "yes",
+      "required": false,
+      "label": {
+        "en": "Display shop details",
+        "fr": "Afficher les coordonnées de la boutique"
+      },
+      "desc": {
+        "en": "Write one of these values : <strong>yes</strong> [by default], <strong>no</strong>",
+        "fr": "Ecrire l'une de ces valeurs : <strong>yes</strong> [oui, par défaut], <strong>no</strong> [non]"
+      }
+    },
+    {
+      "type": "text",
+      "name": "display_copy",
+      "default": "yes",
+      "required": false,
+      "label": {
+        "en": "Display 'powered by' message",
+        "fr": "Afficher le message 'réalisé avec'"
+      },
+      "desc": {
+        "en": "Write one of these values : <strong>yes</strong> [by default], <strong>no</strong>",
+        "fr": "Ecrire l'une de ces valeurs : <strong>yes</strong> [oui, par défaut], <strong>no</strong> [non]"
+      }
+    },
+	{
+      "type": "text",
+      "name": "order_conf_resp_mob",
+      "default": "yes",
+      "required": false,
+      "label": {
+        "en": "Responsive order confirmation mail on mobile",
+        "fr": "Mail de confirmation de commande responsive sur mobile"
+      },
+      "desc": {
+        "en": "Write one of these values : <strong>yes</strong> [by default], <strong>no</strong>. Use the responsive table for the product list on the mobile order confirmation email, or the default table.",
+        "fr": "Ecrire l'une de ces valeurs : <strong>yes</strong> [oui, par défaut], <strong>no</strong> [non]. Utiliser le tableau responsive pour la liste des produits sur la mail de confirmation de commande sur mobile, ou le tableau par défaut."
+      }
+    },
+	{
+      "type": "free",
+      "name": "warning",
+	  "default": "",
+      "label": {
+        "en": "Warning",
+        "fr": "Information"
+      },
+      "desc": {
+        "en": "<span style='color: #00aff0;'>Please note before saving: the module generating all the emails from the parameters above, all the modifications made directly in the emails will be overwritten when saving the parameters.</span>",
+        "fr": "<span style='color: #00aff0;'>Veuillez noter avant de sauvegarder : le modules générant tous les emails à partir des paramètres ci-dessus, toutes les modifiations faites directement dans les emails seront écrasées lors de la sauvegarde des paramètres.</span>"
+      }
+    }
+  ]
+}

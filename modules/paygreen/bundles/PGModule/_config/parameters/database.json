@@ -1,0 +1,27 @@
+{
+  "database": {
+    "entities": {
+      "button": {
+        "table": "${_DB_PREFIX_}paygreen_buttons"
+      },
+      "setting": {
+        "table": "${_DB_PREFIX_}paygreen_settings"
+      },
+      "transaction": {
+        "table": "${_DB_PREFIX_}paygreen_transactions"
+      },
+      "recurring_transaction": {
+        "table": "${_DB_PREFIX_}paygreen_recurring_transaction"
+      },
+      "lock": {
+        "table": "${_DB_PREFIX_}paygreen_transaction_locks"
+      },
+      "category_has_payment": {
+        "table": "${_DB_PREFIX_}paygreen_categories_has_payments"
+      },
+      "fingerprint": {
+        "table": "${_DB_PREFIX_}paygreen_fingerprint"
+      }
+    }
+  }
+}

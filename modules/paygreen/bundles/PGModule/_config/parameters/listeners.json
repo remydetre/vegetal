@@ -1,0 +1,62 @@
+{
+  "listeners": {
+    "register_hooks": {
+      "event": "module.install",
+      "service": "listener.setup.hooks",
+      "method": "registerHooks",
+      "priority": 250
+    },
+    "unregister_hooks": {
+      "event": "module.uninstall",
+      "service": "listener.setup.hooks",
+      "method": "unregisterHooks",
+      "priority": 50
+    },
+    "refresh_hooks": {
+      "event": ["module.install", "module.upgrade"],
+      "service": "listener.setup.hooks",
+      "method": "updateHookPositions"
+    },
+    "insert_admin_page": {
+      "event": "module.install",
+      "service": "listener.setup.admin_page",
+      "method": "insertAdminPage"
+    },
+    "remove_admin_page": {
+      "event": "module.uninstall",
+      "service": "listener.setup.admin_page",
+      "method": "removeAdminPage"
+    },
+    "create_primary_shop": {
+      "event": "module.install",
+      "service": "listener.setup.primary_shop",
+      "method": "createPrimaryShop"
+    },
+    "check_compatibility": {
+      "event": "module.install",
+      "service": "listener.setup.check_compatibility",
+      "method": "checkCompatibility",
+      "priority": 20
+    },
+    "uninstall_translations": {
+      "event": "module.uninstall",
+      "service": "listener.setup.uninstall_translations"
+    },
+    "install_database": {
+      "event": "module.install",
+      "service": "listener.setup.database",
+      "method": "install",
+      "priority": 50
+    },
+    "uninstall_database": {
+      "event": "module.uninstall",
+      "service": "listener.setup.database",
+      "method": "uninstall",
+      "priority": 950
+    },
+    "delivery_confirmation": {
+      "event": "order.tokenize_confirmation",
+      "service": "listener.order.delivery_confirmation"
+    }
+  }
+}

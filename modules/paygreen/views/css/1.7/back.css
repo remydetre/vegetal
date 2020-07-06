@@ -1,0 +1,406 @@
+/**
+* 2014 - 2015 Watt Is It
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PayGreen <contact@paygreen.fr>
+*  @copyright 2014-2014 Watt It Is
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+*/
+
+/* Resets */
+
+#module_form .form-group input,
+#module_form .form-group select,
+#module_form .form-group .radio,
+.ps_paygreen_buttonssetting input,
+.ps_paygreen_buttonssetting select,
+.ps_paygreen_buttonssetting img {
+	max-width: 100%;
+}
+
+
+/* Flex */
+
+.ps_paygreen_stepsbox,
+#ps_paygreen_step0,
+#module_form .form-wrapper,
+#module_form .form-group,
+.ps_paygreen_fields,
+.ps_paygreen_fields .form-group,
+.ps_paygreen_checkbox,
+.ps_paygreen_amount {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+#module_form .form-group {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#ps_paygreen_step0 {
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#module_form .form-wrapper,
+.ps_paygreen_fields {
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Configuration du compte */
+
+#ps_paygreen_step0 a,
+#ps_paygreen_step0 p {
+    margin: 0 20px;
+}
+
+#ps_paygreen_step0 .text-danger {
+	margin: 0;
+}
+
+.ps_paygreen_logoadmin {
+    margin-left: 0 !important;
+}
+
+.ps_paygreen_logoadmin img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.ps_paygreen_step {
+    max-width: 600px;
+    margin: 25px 3% 0 0 !important;
+}
+
+
+/* Configuration du système de paiement */
+
+#module_form .radio {
+	padding-top: 0;
+	min-height: inherit;
+}
+
+#module_form .form-group {
+	width: 48%;
+	margin: 15px 2% 15px 0;
+}
+
+#module_form .form-group:nth-child(odd) {
+	margin-right: 4%;
+}
+
+#module_form .form-group:nth-child(even) {
+	margin-right: 0;
+}
+
+#module_form .control-label {
+	font-weight: bold;
+	text-align: right;
+	padding-top: 0;
+	padding-right: 15px;
+	width: 40%;
+}
+
+#module_form .form-group>div {
+	width: 60%;
+}
+
+
+/* Configuration des boutons */
+
+.ps_paygreen_buttonssetting h2 {
+	margin: 0 0 30px 0;
+}
+
+.ps_paygreen_fields {
+	margin-top: 30px;
+}
+
+.ps_paygreen_fields .form-group {
+	width: 30%;
+	margin-right: 3.3%;
+}
+
+.ps_paygreen_label {
+	font-weight: bold !important;
+	width: 30%;
+	text-align: right;
+}
+
+.ps_paygreen_input {
+	width: 70%;
+	padding-left: 15px;
+}
+
+.ps_paygreen_to {
+	padding: 6px;
+}
+
+.ps_paygreen_fields .checkbox {
+	margin-top: 0 !important;
+}
+
+.ps_paygreen_inputimage img {
+	max-height: 40px;
+	margin-top: 5px;
+}
+
+
+/* Valider, Supprimer, Annuler */
+
+.ps_paygreen_submit {
+	width: 100%;
+}
+
+.ps_paygreen_submit button {
+	margin-left: 10px;
+}
+
+/* Hook PayGreen */
+
+.ps_paygreen_hook .form-group {
+	width: auto;
+	margin-right: 0;
+}
+
+.ps_paygreen_hook .ps_paygreen_label {
+	width: auto;
+	padding-left: 20px;
+}
+
+.ps_paygreen_hook .ps_paygreen_input {
+	width: auto;
+	padding-right: 20px;
+}
+
+.ps_paygreen_hook .help-block {
+	margin: 0;
+}
+
+
+/* Petits écrans */
+
+@media screen and (max-width: 1270px) {
+	.ps_paygreen_fields {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	.ps_paygreen_fields .form-group {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #module_form .form-wrapper {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+    }
+
+	#module_form .form-group,
+	#module_form .form-group:nth-child(odd),
+	#module_form .form-group:nth-child(even) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+    #ps_paygreen_step0 {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .ps_paygreen_logoadmin,
+    #ps_paygreen_step0 a,
+    #ps_paygreen_step0 p {
+        margin: 10px 0;
+    }
+
+    #ps_paygreen_step0 p {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .ps_paygreen_stepsbox {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	#module_form .form-group,
+	.ps_paygreen_fields .form-group {
+	    -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-ms-flex-direction: column;
+        flex-direction: column;
+
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	#module_form .control-label,
+	#module_form .form-group>div,
+	.control-label,
+	.ps_paygreen_input {
+		width: 100%;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.ps_paygreen_hook .form-group {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+
+	.ps_paygreen_hook .ps_paygreen_label {
+		padding-left: inherit;
+	}
+}
+
+
+/* Ajustements localisés */
+
+.ps_paygreen_margin10 {
+	margin-bottom: 10px !important;
+}
+
+
+/* Style tableau moyens de paiement */
+
+.wc_paygreen_categories table {
+	margin-top: 25px;
+    font-size: 1.1em;
+}
+
+.wc_paygreen_categories td {
+    height: 27px;
+    padding: 2px 25px;
+}
+
+.wc_paygreen_categories td {
+    text-align: center;
+}
+
+.wc_paygreen_categories thead {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories thead tr {
+	border-bottom: 1px solid #a0d0eb;
+}
+
+.wc_paygreen_categories thead input {
+    font-weight: normal;
+}
+
+.wc_paygreen_categories thead td input {
+    margin: 0;
+    width: 100%;
+}
+
+.wc_paygreen_categories tbody tr {
+	border-bottom: 1px solid #eaedef;
+}
+
+.wc_paygreen_categories tbody tr:hover {
+	background-color: #f4f8fb;
+}
+
+.wc_paygreen_categories tbody td input {
+    margin: 0 10px;
+}
+
+.wc_paygreen_categories td:first-child {
+    text-align: left;
+}
+
+/* Hiérarchie */
+
+.wc_paygreen_categories .dec_0 {
+    font-weight: bold;
+}
+
+.wc_paygreen_categories .dec_1 {
+    padding-left: 40px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_2 {
+    padding-left: 60px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_3 {
+    padding-left: 80px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_4 {
+    padding-left: 100px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_5 {
+    padding-left: 110px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_6 {
+    padding-left: 120px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_7 {
+    padding-left: 130px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_8 {
+    padding-left: 140px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_9 {
+    padding-left: 150px; /* base + 20px */
+}
+
+.wc_paygreen_categories .dec_10 {
+    padding-left: 160px; /* base + 20px */
+}

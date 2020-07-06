@@ -1,0 +1,11 @@
+
+[{shop_url}] 
+
+Hello {employee_name}
+
+Customer {customer_name} has registered on your store {shop_name}
+A new customer with e-mail {customer_email} has registered on your shop.
+{approve_text}
+{selected_groups}
+
+[{shop_url}] 

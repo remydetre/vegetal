@@ -1,0 +1,10 @@
+
+[{shop_url}] 
+
+Hi {firstname} {lastname}.
+
+Information about your accout from {shop_name}.
+Thank you so much for choosing {shop_name}.
+Your account has been validated and is active now. You can now place orders on our store.
+
+[{shop_url}] 

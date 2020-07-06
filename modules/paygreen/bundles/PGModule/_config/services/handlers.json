@@ -1,0 +1,32 @@
+{
+  "handler.discount": {
+    "class": "PGLegacyServicesDiscountHandler"
+  },
+  "handler.admin_menu": {
+    "class": "PGModuleServicesHandlersAdminMenuHandler",
+    "arguments": [
+      "@bridge.prestashop",
+      "@logger",
+      "%pages"
+    ],
+    "calls": [
+      {
+        "method": "setPrestashopHandler",
+        "arguments": ["@handler.prestashop"]
+      }
+    ]
+  },
+  "handler.shop": {
+    "class": "PGModuleServicesHandlersShopHandler",
+    "arguments": ["@logger"],
+    "calls": [
+      { "method": "setShopManager", "arguments": ["@manager.shop"] },
+      { "method": "setSessionHandler", "arguments": ["@handler.session"] }
+    ]
+  },
+  "handler.setup": {
+    "calls": [
+      { "method": "setSetupOfficer", "arguments": ["@officer.setup"] }
+    ]
+  }
+}
