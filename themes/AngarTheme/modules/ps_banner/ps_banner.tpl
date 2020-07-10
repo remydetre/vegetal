@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if !$customer.is_logged}
-    <div class="col-md-4 hidden-sm-down">
+    <div class="pt-1 col-md-4 hidden-sm-down">
         <a class="banner" href="{$banner_link}" title="{$banner_desc}">
             {if isset($banner_img)}
                 <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
