@@ -7,6 +7,7 @@
 <script>
 $(window).load(function(){
 		$('#angarslider').bxSlider({
+			touchEnabled: false,
 			maxSlides: 1,
 			slideWidth: 1920,
 			infiniteLoop: true,
@@ -15,7 +16,6 @@ $(window).load(function(){
 			autoHover: {$pause_hover},
 			speed: 500,
 			pause: {$pause},
-			touchEnabled: true
 		});
 });
 </script>

@@ -69,9 +69,9 @@ function chooseDisplayNotAuthorizedBlockPositionAndShow(hidePriceConfigData) {
 
 function prepareMessageBoxToDisplayInProductsCatalog() {
 	if ($(".products").length > 0) {
-		$("article.product-miniature").css("height","420px");
-		$("article .thumbnail-container").css("height","370px");
-		$("article .product-description").css("height","150px");
+		//$("article.product-miniature").css("height","420px");
+		//$("article .thumbnail-container").css("height","370px");
+		//$("article .product-description").css("height","150px");
 		$("article .highlighted-informations").css("height","8.125rem");
 		$(".products .product-description").append("<div class='notAuthorizedBoxGlobal'></div>");
 	}
