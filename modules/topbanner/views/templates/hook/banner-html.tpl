@@ -24,71 +24,78 @@
 *}
 
 <div id="ps_topbanner_wrapper">
-	{$banner['text']|escape:'htmlall':'UTF-8'}
+    {$banner['text']|escape:'htmlall':'UTF-8'}
 
-	{if $banner['timer'] == 1}
-		{$banner['timer_left_text']|escape:'htmlall':'UTF-8'}
-		{include file="./timer.tpl"}
-		{$banner['timer_right_text']|escape:'htmlall':'UTF-8'}
-	{/if}
+    {if $banner['timer'] == 1}
+        {$banner['timer_left_text']|escape:'htmlall':'UTF-8'}
+        {include file="./timer.tpl"}
+        {$banner['timer_right_text']|escape:'htmlall':'UTF-8'}
+    {/if}
 
-	{if $banner['cta'] == 1}
-		<a class="ps_topbanner_cta">{$banner['cta_text']|escape:'htmlall':'UTF-8'}</a>
-	{/if}
+    {if $banner['cta'] == 1}
+        <a class="ps_topbanner_cta">{$banner['cta_text']|escape:'htmlall':'UTF-8'}</a>
+    {/if}
 
 </div>
 
 <style>
-{*/*
-    {if $banner['timer'] == 1}
-    @media all and (max-width: 480px) {
+    {*/*
+        {if $banner['timer'] == 1}
+        @media all and (max-width: 480px) {
+            #ps_topbanner_wrapper {
+                display: none;
+            }
+        }
+        {/if}
+    */*}
+    header .banner {
+        background-color: {$banner['background']|escape:'htmlall':'UTF-8'};
+    }
+
+    #ps_topbanner_wrapper {
+        width: 100%;
+        left: 0;
+        z-index: 999;
+        top: 0;
+
+        height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
+        line-height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
+        background-color: {$banner['background']|escape:'htmlall':'UTF-8'};
+        font-size: {$banner['text_size']|escape:'htmlall':'UTF-8'}px;
+        color: {$banner['text_color']|escape:'htmlall':'UTF-8'};
+
+        text-align: center;
+
+    {if $fontFamily == 'Roboto' || $fontFamily == 'Hind' || $fontFamily == 'Maven Pro'} font-family: '{$fontFamily|escape:'htmlall':'UTF-8'}', sans-serif;
+    {else} font-family: '{$fontFamily|escape:'htmlall':'UTF-8'}', serif;
+    {/if}
+    }
+
+    @media only screen and (max-width: 320px) {
         #ps_topbanner_wrapper {
-            display: none;
+            font-size: .9em
+        }
+    }
+
+    {if $banner['cta'] == 1}
+    #ps_topbanner_wrapper {
+        cursor: pointer;
+    }
+
+    .ps_topbanner_cta {
+        white-space: nowrap;
+        color: {$banner['cta_text_color']|escape:'htmlall':'UTF-8'} !important;
+        padding: 5px;
+        background-color: {$banner['cta_background']|escape:'htmlall':'UTF-8'};
+        border-radius: 4px;
+    }
+
+	@media screen and (max-width: 767px) {
+        .ps_topbanner_cta {
+            font-size: 12px !important;
+			padding: 2px !important;
         }
     }
     {/if}
-*/*}
-	header .banner {
-		background-color: {$banner['background']|escape:'htmlall':'UTF-8'};
-	}
-
-	#ps_topbanner_wrapper {
-		width: 100%;
-		left: 0;
-		z-index: 999;
-		top: 0;
-
-		height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
-		line-height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
-		background-color: {$banner['background']|escape:'htmlall':'UTF-8'};
-		font-size: {$banner['text_size']|escape:'htmlall':'UTF-8'}px;
-		color: {$banner['text_color']|escape:'htmlall':'UTF-8'};
-
-		text-align: center;
-
-		{if $fontFamily == 'Roboto' || $fontFamily == 'Hind' || $fontFamily == 'Maven Pro'}
-			font-family: '{$fontFamily|escape:'htmlall':'UTF-8'}', sans-serif;
-		{else}
-			font-family: '{$fontFamily|escape:'htmlall':'UTF-8'}', serif;
-		{/if}
-	}
-
-    @media only screen and (max-width:320px) {
-        #ps_topbanner_wrapper { font-size: .9em }
-    }
-
-	{if $banner['cta'] == 1}
-		#ps_topbanner_wrapper {
-			cursor: pointer;
-		}
-
-		.ps_topbanner_cta {
-			white-space: nowrap;
-			color: {$banner['cta_text_color']|escape:'htmlall':'UTF-8'}!important;
-			padding: 5px;
-			background-color: {$banner['cta_background']|escape:'htmlall':'UTF-8'};
-			border-radius: 4px;
-		}
-	{/if}
 
 </style>
