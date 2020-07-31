@@ -83,6 +83,7 @@
 		}
 
 		.ps_topbanner_cta {
+			white-space: nowrap;
 			color: {$banner['cta_text_color']|escape:'htmlall':'UTF-8'}!important;
 			padding: 5px;
 			background-color: {$banner['cta_background']|escape:'htmlall':'UTF-8'};
