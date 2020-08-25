@@ -4390,6 +4390,8 @@ class Ets_megamenu extends Module
                 if($position = (int)Configuration::get('ETS_MM_POSITION_BLOCK_SEARCH'))
                     $ps_searchbar->updatePosition($id_hook,false,$position);
             }
+
+            /*
             $ps_shoppingcart= Module::getInstanceByName('ps_shoppingcart');
             if($ps_shoppingcart && !$ps_shoppingcart->isRegisteredInHook('displayNav2') && Configuration::get('ETS_MM_POSITION_BLOCKCART'))
             {
@@ -4399,6 +4401,7 @@ class Ets_megamenu extends Module
                     $ps_shoppingcart->updatePosition($id_hook,false,$position);
                 $ps_shoppingcart->unregisterHook('displayCartTop');
             }
+            */
         }
         else
         {
